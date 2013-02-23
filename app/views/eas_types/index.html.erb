@@ -1,0 +1,28 @@
+<h2>EAS Categories</h2>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Early </th>
+    <th>Normal</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @eas_types.each do |eas_type| %>
+  <tr>
+    <td><%= eas_type.name %> </td>
+    <td><%= eas_type.early %></td>
+    <td><%= eas_type.normal %></td>
+<!--    <td><%= link_to 'Show', eas_type %></td> -->
+    <td><%= link_to 'Edit', edit_eas_type_path(eas_type) %></td>
+<!--    <td><%= link_to 'Remove', eas_type, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr> --> 
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Category', new_eas_type_path %>
+
