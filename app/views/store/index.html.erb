@@ -28,6 +28,17 @@ Find this display in /store/index.html.erb. css is in /assets/depot.css
              Contemplation Seed.<br /> <i><%= product.quote %> </i><br />
               From the book <i><%= product.quote_ref %></i> by <%= product.quote_auth %>
              </div>
+             
+             
+             <div class="price_line">
+				<span class="adultprice" >Adults <%= number_to_currency(product.adult_price) %></span><br />
+				<span class="famprice" >Family <%= number_to_currency(product.fam_price) %></span><br />
+				<span class="pensprice" >pensioner/student <%= number_to_currency(product.pens_price) %></span><br />
+				<span class="youthprice" >Youth <%= number_to_currency(product.youth_price) %></span><br />
+			  </div>
+			  <div class="add2cartbutton">
+				<%= button_to 'Add to Cart', line_items_path(:product_id => product) %>
+             </div>
 
      </div>
      
