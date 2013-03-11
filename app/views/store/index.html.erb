@@ -17,7 +17,7 @@ Find this display in /store/index.html.erb. css is in /assets/depot.css
              </div>
              
              <div class="field_description">
-             <%= sanitize(truncate(strip_tags(product.description)), :length => 200) %>
+             <%= truncate(sanitize(strip_tags(product.description)), :length =>300) %>
              </div>
              
              <div class="field_venue_details">
@@ -25,7 +25,7 @@ Find this display in /store/index.html.erb. css is in /assets/depot.css
              </div>
              
              <div class="field_quotes">
-             Contemplation Seed.<br /> <i><%= product.quote %> </i><br />
+             Contemplation Seed.<br /> <i><%= truncate(sanitize(strip_tags(product.quote)), :length =>300) %> </i><br />
               From the book <i><%= product.quote_ref %></i> by <%= product.quote_auth %>
              </div>
              
