@@ -10,7 +10,7 @@ Find this display in /store/index.html.erb. css is in /assets/depot.css
   <% @products.each do |product| %>
      <div class="entry" >
        <%= image_tag(product.image_url) %>
-       <h3><%= product.title %></h3>
+       <h3><%= product.title %></h3> This event is for <%= product.initiate %>
 
              <div class="field_date"> 
              <%= product.event_time %> <%= product.event_date %><

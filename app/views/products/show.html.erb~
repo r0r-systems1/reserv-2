@@ -1,5 +1,5 @@
 <p id="notice"><%= notice %></p>
-(/app/views/product/show)
+/app/views/product/show
 <p>
   <b>Event Details</b><br />
    <%= @product.event_type %> for <%= @product.initiate %>.   <%= @product.title %> over 

@@ -11,7 +11,7 @@
     </div>
   <% end %>
 
-  <div class="field_eventtitle">
+  <div class="field">
     <%= f.label :title %> Max 45 characters<br />
     <%= f.text_field :title, :size =>45 %>
   </div>
@@ -20,8 +20,8 @@
     <%= f.text_field :event_type, :size =>45 %>
   </div>
   <div class="field_initiate">
-    Indicate  Everyone, Members, High Initiates<br />
-    <%= f.text_field :initiate, :size => 26 %>  
+    Indicate  Everyone, Members, Special<br />
+    <%= f.text_field :initiate, :size => 8 %>  
   </div><hr>
   &nbsp;
   <div class="field">

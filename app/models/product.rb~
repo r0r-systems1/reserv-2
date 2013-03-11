@@ -9,7 +9,8 @@ class Product < ActiveRecord::Base
 	validates :quote, :length => { :maximum => 1000 }
 	validates :quote_auth, :length => { :maximum => 30}
 	validates :quote_ref, :length => { :maximum => 120 } 
-       
+   validates :initiate, :length => { :maximum => 8 }
+      
     default_scope :order => 'title'
     has_many :line_items
     before_destroy :ensure_not_referenced_by_any_line_item
