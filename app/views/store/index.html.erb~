@@ -4,7 +4,7 @@
 <h1>ECK Event Reservations</h1>
 <p>This system is for attendees to pre register for ECKANKAR events.<br/>
 Select options from the menu opposite.<br/>
-Find this display in /store/index.html.erb. css is in /assets/depot.css
+Find this display in /store/index.html.erb
 </p>
 
   <% @products.each do |product| %>

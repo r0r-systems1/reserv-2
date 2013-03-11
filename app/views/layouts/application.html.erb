@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>EAS Reservations</title>
+  <title>EAS Events & Reservations</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "defaults" %>
   <%= csrf_meta_tags %>
@@ -10,22 +10,26 @@
 <body id="store" >
 <div id="banner" >
 <!-- <%= image_tag(" ") %> -->
-<%= @page_title || "EAS Reservations" %>
+<%= @page_title || "EAS Events & Reservations" %>
 </div>
 <div id="columns" >
 <div id="side" >
 <a href="http://localhost:3000" >Home</a><br />
-<a href="http://localhost:3000/eas_types" >Category $</a><br />
-<a href="http://localhost:3000/payments" >Payments</a><br />
-<a href="http://localhost:3000/attendees" >Attendees</a><br />
+
+
 <!-- <a href="http://localhost:3000/products" >Products</a><br /> -->
 
-<hr> </hr>
-<a href="http://localhost:3000" >Home</a><br />
-<a href="http://localhost:3000/eas_types/new" >New Category $</a><br />
-<a href="http://localhost:3000/payments/new" >New Payments</a><br />
-<a href="http://localhost:3000/attendees/new" >New Attendees</a><br />
-<hr> </hr>
+<hr>
+
+<a href="http://localhost:3000/products/new" >New Product</a><br />
+<a href="http://localhost:3000/attendees/new" >New Attendee</a><br />
+<a href="http://localhost:3000/payments/new" >New Payment</a><br />
+<a href="http://localhost:3000/eas_types/new" >NewCategory</a><br />
+<hr> 
+<a href="http://localhost:3000/products" >View Product</a><br />
+<a href="http://localhost:3000/eas_types" >View Categories</a><br />
+<a href="http://localhost:3000/payments" >View Payments</a><br />
+<a href="http://localhost:3000/attendees" >View Attendees</a><br />
 </div>
 <div id="main" >
 

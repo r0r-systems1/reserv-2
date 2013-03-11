@@ -1,5 +1,7 @@
 Depot::Application.routes.draw do
 
+  resources :products
+
   resources :payments
 
   resources :eas_types
@@ -11,8 +13,6 @@ Depot::Application.routes.draw do
   resources :carts
 
   get "store/index"
-
-  resources :products
   
   resources :attndcats
   

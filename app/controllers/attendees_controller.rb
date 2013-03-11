@@ -23,11 +23,16 @@ class AttendeesController < ApplicationController
 
   # GET /attendees/new
   # GET /attendees/new.json
+  
   def new
     @attendee = Attendee.new
-    
-###    @all_ctlg = Eas_type.all
-###    @attnd_ctlg = @eas_type.attndcats.build
+## this should produce a select list of the catalogue.
+# Would prefer it to be a set of buttons where one or more can be selected. Buttons are in Rails 4 not rails 3 
+
+ #  @all_ctlg = Eas_type.all
+ #  @attnd_ctlg = @attendees.attndcats.build
+
+
 
     respond_to do |format|
       format.html # new.html.erb

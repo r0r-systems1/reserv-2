@@ -69,7 +69,7 @@
 #store  .entry {
   overflow: auto;
   margin-top: 1em;
-  border-bottom: 1px dotted #77d;
+  border-bottom: 15px solid #ededed; /*bottom of each entry*/
 }
 
 #store  .title {
@@ -77,10 +77,11 @@
   font-family: sans-serif;
 }
 
-#store .entry img {
-  width: 80px;
-  margin-right: 5px;
-  margin-bottom: 5px;
+#store .entry img { /*Set image width, height is automatic. */
+  width: 220px;
+  margin:3em 3em 3em 0 ; /*TRBL*/
+  padding:1em 0 0 0  ; /*TRBL*/
+
   float: left;
 }
 

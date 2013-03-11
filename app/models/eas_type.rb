@@ -7,6 +7,5 @@ class EasType < ActiveRecord::Base
   
   belongs_to :attendee
   
-  has_many :attndcats
-  has_many :attendees, :through => :attndcats
+
 end

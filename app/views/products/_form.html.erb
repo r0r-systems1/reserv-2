@@ -16,16 +16,68 @@
     <%= f.text_field :title %>
   </div>
   <div class="field">
+    <%= f.label :event_type %><br />
+    <%= f.text_field :event_type %>
+  </div>
+  <div class="field">
+    <%= f.label :event_date %><br />
+    <%= f.date_select :event_date %>
+  </div>
+  <div class="field">
+    <%= f.label :num_days %><br />
+    <%= f.number_field :num_days %>
+  </div>
+  <div class="field">
+    <%= f.label :event_time %><br />
+    <%= f.time_select :event_time %>
+  </div>
+  <div class="field">
     <%= f.label :description %><br />
-    <%= f.text_area :description, :rows => 10%>
+    <%= f.text_area :description %>
   </div>
   <div class="field">
     <%= f.label :image_url %><br />
     <%= f.text_field :image_url %>
   </div>
   <div class="field">
-    <%= f.label :price %><br />
-    <%= f.text_field :price %>
+    <%= f.label :venue %><br />
+    <%= f.text_field :venue %>
+  </div>
+  <div class="field">
+    <%= f.label :address %><br />
+    <%= f.text_field :address %>
+  </div>
+  <div class="field">
+    <%= f.label :contact %><br />
+    <%= f.text_field :contact %>
+  </div>
+  <div class="field">
+    <%= f.label :quote %><br />
+    <%= f.text_area :quote %>
+  </div>
+  <div class="field">
+    <%= f.label :quote_ref %><br />
+    <%= f.text_area :quote_ref %>
+  </div>
+  <div class="field">
+    <%= f.label :quote_auth %><br />
+    <%= f.text_field :quote_auth %>
+  </div>
+  <div class="field">
+    <%= f.label :adult_price %><br />
+    <%= f.number_field :adult_price %>
+  </div>
+  <div class="field">
+    <%= f.label :pens_price %><br />
+    <%= f.number_field :pens_price %>
+  </div>
+  <div class="field">
+    <%= f.label :fam_price %><br />
+    <%= f.number_field :fam_price %>
+  </div>
+  <div class="field">
+    <%= f.label :youth_price %><br />
+    <%= f.number_field :youth_price %>
   </div>
   <div class="actions">
     <%= f.submit %>
