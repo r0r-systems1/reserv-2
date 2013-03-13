@@ -12,12 +12,12 @@ group :assets do
   gem 'coffee-rails', '~> 3.2.1'
   
 group :development, :test do
-### gem 'sqlite3'
-gem 'minitest'
+   gem 'sqlite3'
+   gem 'minitest'
 end
 
 group :production do
-gem 'pg'
+   gem 'pg'
 end
 
 
