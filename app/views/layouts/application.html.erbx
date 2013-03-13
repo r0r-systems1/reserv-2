@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>EAS Events & Reservations</title>
+  <title>EAS Events & Reservations</title> <!--heading in green banner -->
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "defaults" %>
   <%= csrf_meta_tags %>
@@ -13,8 +13,10 @@
 <%= @page_title || "EAS Events & Reservations" %>
 </div>
 <div id="columns" >
+	
 <div id="side" >
 	<!--
+	
 <a href="http://lit-beach-5612.herokuapp.com/" >Home</a><br />
 
 <hr>
@@ -29,8 +31,8 @@
 <a href="http://lit-beach-5612.herokuapp.com/attendees" >View Attendees</a><br />
 <hr>
 <a href="http://lit-beach-5612.herokuapp.com/products" >edit products</a>
--->
-</div>
+ -->
+</div> 
 <div id="main" >
 
 <%= yield %>
