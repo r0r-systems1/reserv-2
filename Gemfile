@@ -19,7 +19,6 @@ end
 
 group :development, :test do
    gem 'sqlite3'
-   gem 'minitest'
 end
 
 group :production do
@@ -27,6 +26,7 @@ group :production do
 end
 
 gem 'jquery-rails'
+gem 'minitest'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
