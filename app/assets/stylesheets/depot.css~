@@ -103,7 +103,7 @@ padding: 1em 0 3em 0; /*TRBL*/
 
 #store .price_line { /*position of donation list*/
 display:block
-/* clear: both;*/
+ clear: both;
  position:relative;
  margin-bottom: 0.5em;
  margin-top:2em;
@@ -113,7 +113,7 @@ display:block
 
 #store .add2cartbutton {
 display:block
-/* clear: both;*/
+ clear: both;
  margin-bottom: 0.5em;
  padding-top:3em;
  position:relative;
