@@ -85,7 +85,6 @@ padding: 1em 0 3em 0; /*TRBL*/
   width: 220px;
   margin:3em 3em 3em 0 ; /*TRBL*/
   padding:1em 0 0 0  ; /*TRBL*/
-
   float: left;
 }
 
@@ -102,8 +101,7 @@ padding: 1em 0 3em 0; /*TRBL*/
 }
 
 #store .price_line { /*position of donation list*/
-display:block
- clear: both;
+ display:block
  position:relative;
  margin-bottom: 0.5em;
  margin-top:2em;
@@ -112,8 +110,7 @@ display:block
 }
 
 #store .add2cartbutton {
-display:block
- clear: both;
+ display:block
  margin-bottom: 0.5em;
  padding-top:3em;
  position:relative;
