@@ -2,4 +2,4 @@
 <p>Find me in app/views/admin/index.html.erb</p>
 <h1>Welcome</h1>
 It's <%= Time.now %>
-We have <%= pluralize(@attendees, "attendee" ) %>.
+We have <%= pluralize(@total_orders, "order" ) %>.

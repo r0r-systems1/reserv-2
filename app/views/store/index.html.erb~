@@ -1,16 +1,15 @@
 <% if notice %>
 <p id="notice" ><%= notice %></p>
 <% end %>
-<h1>ECK Event Reservations</h1>
+<h1>Current Eckankar Events</h1>
 <p>This system is for attendees to pre register for ECKANKAR events.<br/>
-Select options from the menu opposite.<br/>
-Find this display in /store/index.html.erb. css is in /assets/depot.css
+(Display = /store/index.html.erb. css = /assets/depot.css)
 </p>
 
   <% @products.each do |product| %>
      <div class="entry" >
        <%= image_tag(product.image_url) %>
-       <h3><%= product.title %></h3> This event is for <u><%= product.initiate %></u>
+       <h3><%= product.title %></h3> 
 
              <div class="field_date"> 
              <%= product.event_time %> <%= product.event_date %>
@@ -37,8 +36,10 @@ Find this display in /store/index.html.erb. css is in /assets/depot.css
 				<span class="youthprice" >Youth <%= number_to_currency(product.youth_price) %></span><br />
 			  </div>
 			  <div class="add2cartbutton">
-				<%= button_to 'Register for this event', line_items_path(:product_id => product) %>
-             </div>
+			  
+			   <u> This event is for <%= product.initiate %></u>> 
+				   <%= button_to 'Register for this event', line_items_path(:product_id => product) %>
+            </div>
 
      </div>
      
