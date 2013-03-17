@@ -1,0 +1,17 @@
+######## GitHub Sunday 17 March
+
+Created new repository in Git Hub called: git@github.com:r0r-systems1/reserv-2.git
+
+Changed Rails_projects/REservations
+Did a git pull 
+Then did: git commit -a -m"sunday arvo"
+and then: git push git@github.com:r0r-systems1/reserv-2.git
+And complete file system is in the github
+
+
+Cannot push to the original git@github.com:r0r-systems1/Reservations.git because:
+error: failed to push some refs to 'git@github.com:r0r-systems1/Reservations.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Merge the remote changes (e.g. 'git pull')
+hint: before pushing again.
+and git pull does nothing...........
